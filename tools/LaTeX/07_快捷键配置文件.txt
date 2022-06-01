@@ -1,0 +1,17 @@
+[
+	{ "keys": ["f5"], "command": "build" },
+	{ "keys": ["ctrl+r"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+	{ "keys": ["ctrl+["], "command": "jump_back" },
+	{ "keys": ["ctrl+]"], "command": "jump_forward" },
+	{ "keys": ["ctrl+t"], "command": "title_case" },
+	{ "keys": ["ctrl+l"], "command": "lower_case" },
+	{ 	"keys": ["ctrl+1"], 
+		"context":  [
+			{"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
+		"command": "jump_to_pdf", "args": {"from_keybinding": true}},
+	{ "keys": ["ctrl+2"],
+		"args": {"only_current_file": true},
+		"context":  [
+			{"key": "selector", "operator": "equal", "operand": "text.tex"}],
+		"command": "latex_toc_quickpanel"},
+]

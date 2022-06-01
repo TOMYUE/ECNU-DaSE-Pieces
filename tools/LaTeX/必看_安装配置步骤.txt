@@ -1,0 +1,49 @@
+------交大胖倾力分享 Latex+Sublime科研论文写作高级环境------
+
+a. 解压01文件夹内.iso文件（texlive本体），双击install-tl-advanced.bat安装
+
+b. 打开02文件夹内文件（sublime text编辑器），双击安装
+
+c. 打开步骤b安装的sublime text，点击Preferences-Browse Packages,然后回到上一级目录（Sublime Text 3），
+    然后打开Installed Packages文件夹，将03文件夹内文件（Package Control.sublime-package）复制粘贴到此处
+
+d. 重启sublime text，在Preferences下可以看到Package Control，说明c步骤安装成功
+
+e. 在sublime text界面，Ctrl+Shift+P打开Package Control，输入Package Control: Install Package，出现列表后输入LatexTools，选择它安装，
+    该步骤为sublime安装Latex基础插件
+
+f. 在sublime text界面，Ctrl+Shift+P打开Package Control，输入Package Control: Install Package，出现列表后输入Latex-cwl，选择它安装，
+   该步骤为sublime安装Latex命令自动补全功能
+
+g. 打开04文件夹内文件（Sumatra pdf），双击安装
+
+------至此，安装步骤全部完成，下面是更为重要的配置环节！！！请仔细仔细再仔细，不要漏步错步。序号后括号内解释每一步操作的目的------
+
+h(配置latextool). 在sublime text界面，点击Preferences-Package Settings-LatexTools-Settings-User，
+     将05文件中的代码粘贴替换到新打开文件的相应位置，注意不是全文替换！而是只替换 "windows":{相应区域}
+     注意此处的texlive文件夹和sumatra文件夹要改为你实际安装相应软件的位置。
+     继续在文件中搜索并替换类似字段为	"builder": "simple",
+
+i(配置SumatraPDF环境变量). 选择此电脑-属性- 高级系统设置-环境变量，在系统变量的Path变量中，加入 SumatraPDF 的安装路径，
+ 如 D:\Program Files\SumatraPDF
+
+j(配置SumatraPDF反向定位功能). Win+R后，输入cmd，执行以下命令（路径根据实际调整） 
+ sumatrapdf.exe -inverse-search "\"D:\Program Files\Sublime Text 3\sublime_text.exe\" \"%f:%l\"
+ 在SumatraPDF中点 设置-选项，在设置反向搜索命令行中 粘贴以下命令（路径根据实际调整）
+ "D:\Program Files\Sublime Text 3\sublime_text.exe" "%f:%l"
+ 配置好后，双击PDF相应位置可以跳转到相应代码
+
+k(配置sublime).  在sublime text界面，Preference-Settings，在打开界面的右边粘贴替换06文件中的全文，
+ 该步骤后，就有了单词补全，拼写检查，漂亮的编辑器配色等
+
+l(设定额外快捷键). 在sublime text界面，Preference-Key Bindings, 在打开界面的右边粘贴替换07文件中的全文，
+ 该步骤后，就有了本UP自认为非常必要额外加的快捷键，可以根据文本挨个试试这些快捷键（注意Ctrl+D智能扩选此类快捷键本身sublime就自带，无需配置）
+
+m(设定snippet). 在sublime text界面，Preference-Browse Packages, 打开Usersnippets文件夹，将08文件夹中的文件全部复制粘贴到此处。
+   各个文件名即为snippet的触发指令，可以挨个试试看。
+
+------至此，配置步骤全部完成，快捷键和snippet同学们可以根据需求自行增删，enjoy！------
+ 
+
+
+

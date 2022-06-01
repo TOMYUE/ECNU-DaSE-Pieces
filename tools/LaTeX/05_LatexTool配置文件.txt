@@ -1,0 +1,17 @@
+	"windows": {
+			// Path used when invoking tex & friends; "" is fine for MiKTeX
+			// For TeXlive 2011 (or other years) use
+			// "texpath" : "C:\\texlive\\2011\\bin\\win32;$PATH",
+			"texpath" : "D:\\texlive\\2017\\bin\\win32;$PATH",
+			// TeX distro: "miktex" or "texlive"
+			"distro" : "texlive",
+			// Command to invoke Sumatra. If blank, "SumatraPDF.exe" is used (it has to be on your PATH)
+			"sumatra": "D:\\Program Files\\SumatraPDF\\SumatraPDF.exe",
+			// Command to invoke Sublime Text. Used if the keep_focus toggle is true.
+			// If blank, "subl.exe" or "sublime_text.exe" will be used.
+			"sublime_executable": "",
+			// how long (in seconds) to wait after the jump_to_pdf command completes
+			// before switching focus back to Sublime Text. This may need to be
+			// adjusted depending on your machine and configuration.
+			"keep_focus_delay": 0.5
+		},

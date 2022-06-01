@@ -1,0 +1,30 @@
+{
+	"added_words":
+	[
+		"reactance"
+	],
+	"auto_complete": true,
+	"auto_complete_delay": 100,
+	"auto_complete_selector": "source, text",
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		},
+		{
+			"characters": "\\",
+			"selector": "text.tex.latex"
+		}
+	],
+	"auto_match_enabled": true,
+	"color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
+	"font_size": 12,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"spell_check": true,
+	"tab_completion": false,
+	"update_check": false
+}
