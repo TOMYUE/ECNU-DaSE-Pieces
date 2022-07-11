@@ -93,3 +93,8 @@ mysql>
 ## 注意点：
 1. 使用brew在命令行中安装，和下载客户端的mysql pane不要重复，否则命令行中再次启动mysql命令：`mysql.server start`会出现Error
 2. MySQL通过Homebrew进行安装下，默认登陆数据库的随机密码是被brew设置好为（空）的，所以我们不需要这个密码，和在windows上进行安装不同(windows上需要记录下随机生成的密码)
+
+
+## 比较靠谱的安装教程资源
+1. https://www.youtube.com/watch?v=1K4m6m5y9Oo
+2. https://database.guide/install-mysql-on-a-mac/
