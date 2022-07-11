@@ -88,7 +88,11 @@ mysql> show databases
 
 mysql>
 ```
-
+### connect to and disconnect to
+```
+mysql -h root -p
+```
+`QUIT` or `\q`
 
 ## 注意点：
 1. 使用brew在命令行中安装，和下载客户端的mysql pane不要重复，否则命令行中再次启动mysql命令：`mysql.server start`会出现Error
